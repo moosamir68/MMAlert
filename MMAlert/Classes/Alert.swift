@@ -9,13 +9,13 @@
 import UIKit
 
 public class Alert: NSObject {
-    var title:String? = ""
-    var isChecked:Bool? = false
-    var image:UIImage?
-    var urlImage:String?
-    var id:Int = 0
-    var idString:String? = ""
-    var color:UIColor?
+    public var title:String? = ""
+    public var isChecked:Bool? = false
+    public var image:UIImage?
+    public var urlImage:String?
+    public var id:Int = 0
+    public var idString:String? = ""
+    public var color:UIColor?
     
     override public init() {
         super.init()
