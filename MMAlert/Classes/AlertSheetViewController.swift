@@ -9,8 +9,8 @@ let identifireAlertCell = "AlertTableViewCell"
 import UIKit
 
 public protocol AlertSheetDelegate {
-    func userDidTapOnElement(fromController:AlertSheetViewController?, index:Int?, withElements:[Alert]?)
-    func userDidTapOnDismissAlertController(fromController:AlertSheetViewController?)
+    func userDidTapOnElement(fromController:AlertSheetViewController, index:Int, withElements:[Alert])
+    func userDidTapOnDismissAlertController(fromController:AlertSheetViewController)
 }
 
 public class AlertSheetViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -21,7 +21,7 @@ public class AlertSheetViewController: UIViewController, UITableViewDelegate, UI
     @IBOutlet public var dismissView: UIView!
     
     public var delegate:AlertSheetDelegate?
-    public var elements:[Alert]?
+    public var elements:[Alert] = [Alert]()
     
     public var cancelTitle:String? = "Cancel"
     public var fontCancel:UIFont? = UIFont.systemFont(ofSize: 18.0)
@@ -44,7 +44,7 @@ public class AlertSheetViewController: UIViewController, UITableViewDelegate, UI
     }
     
     override public func viewWillLayoutSubviews() {
-        var heightTableView = CGFloat((self.elements?.count)!) * 56.0
+        var heightTableView = CGFloat((self.elements.count)) * 56.0
         let maxHeaightTableView = self.view.frame.size.height - 112.0
         if(heightTableView > maxHeaightTableView){
             heightTableView = maxHeaightTableView
@@ -96,7 +96,7 @@ public class AlertSheetViewController: UIViewController, UITableViewDelegate, UI
         if(self.isEmptyDataSuorce()){
             return 0
         }
-        return (self.elements?.count)!
+        return (self.elements.count)
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -105,7 +105,7 @@ public class AlertSheetViewController: UIViewController, UITableViewDelegate, UI
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:AlertTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: identifireAlertCell, for: indexPath) as! AlertTableViewCell
-        let element = self.elements![indexPath.row]
+        let element = self.elements[indexPath.row]
         cell.fillData(alert: element)
         
         return cell
@@ -120,7 +120,7 @@ public class AlertSheetViewController: UIViewController, UITableViewDelegate, UI
     
     //MARK:- internal method
     func isEmptyDataSuorce() ->Bool{
-        if(self.elements != nil && self.elements?.count != 0){
+        if(self.elements.count != 0){
             return false
         }
         return true

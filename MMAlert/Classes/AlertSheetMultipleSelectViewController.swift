@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol AlertSheetMultipleSelectDelegate {
-    func userDidTapOnConfirmAlertMultipleSelectController(fromController:AlertSheetMultipleSelectViewController?, elements:[Alert]?)
+    func userDidTapOnConfirmAlertMultipleSelectController(fromController:AlertSheetMultipleSelectViewController?, elements:[Alert])
 }
 
 public class AlertSheetMultipleSelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -20,7 +20,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
     @IBOutlet public var dismissView: UIView!
     
     public var delegate:AlertSheetMultipleSelectDelegate?
-    public var elements:[Alert]?
+    public var elements:[Alert] = [Alert]()
     
     public var titleDone:String? = "Done"
     public var fontDone:UIFont? = UIFont.boldSystemFont(ofSize: 18.0)
@@ -43,7 +43,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
     }
     
     override public func viewWillLayoutSubviews() {
-        var heightTableView = CGFloat((self.elements?.count)!) * 56.0
+        var heightTableView = CGFloat(self.elements.count) * 56.0
         let maxHeaightTableView = self.view.frame.size.height - 90.0
         if(heightTableView > maxHeaightTableView){
             heightTableView = maxHeaightTableView
@@ -93,7 +93,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
         if(self.isEmptyDataSuorce()){
             return 0
         }
-        return (self.elements?.count)!
+        return (self.elements.count)
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -102,7 +102,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:AlertTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: identifireAlertCell, for: indexPath) as! AlertTableViewCell
-        let element = self.elements![indexPath.row]
+        let element = self.elements[indexPath.row]
         cell.fillData(alert: element)
         
         return cell
@@ -111,7 +111,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let alert = self.elements![indexPath.row]
+        let alert = self.elements[indexPath.row]
         let cell:AlertTableViewCell = self.tableView.cellForRow(at: indexPath) as! AlertTableViewCell
         
         if(alert.isChecked)!{
@@ -125,7 +125,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
     
     //MARK:- internal method
     func isEmptyDataSuorce() ->Bool{
-        if(self.elements != nil && self.elements?.count != 0){
+        if(self.elements.count != 0){
             return false
         }
         return true
