@@ -17,7 +17,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
     @IBOutlet var doneButton: UIButton!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var tableViewConstraintHeight: NSLayoutConstraint!
-    @IBOutlet var dismissView: UIView!
+    @IBOutlet public var dismissView: UIView!
     
     public var delegate:AlertSheetMultipleSelectDelegate?
     public var elements:[Alert]?
