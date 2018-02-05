@@ -1,15 +1,15 @@
 //
-//  ASAlertTableViewCell.swift
-//  Artiscovery
+//  MMAlertTableViewCell.swift
+//  Moosa Mir
 //
 //  Created by Moosa Mir on 10/18/17.
-//  Copyright © 2017 Artiscovery. All rights reserved.
+//  Copyright © 2017 Moosa Mir. All rights reserved.
 //
 
 import UIKit
 import Kingfisher
 
-class AlertTableViewCell: UITableViewCell {
+class MMAlertTableViewCell: UITableViewCell {
     @IBOutlet var boxView: UIView!
     @IBOutlet var titleItem: UILabel!
     @IBOutlet weak var checkBoxImageView: UIImageView!
@@ -34,7 +34,7 @@ class AlertTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func fillData(alert:Alert?){
+    func fillData(alert:MMAlert?){
         if(alert != nil){
             if(alert?.color != nil){
                 self.titleItem.textColor = self.colorTitle

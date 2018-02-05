@@ -1,19 +1,19 @@
 //
-//  ASAlertViewController.swift
-//  Artiscovery
+//  MMAlertSheetViewController.swift
+//  Moosa Mir
 //
 //  Created by Moosa Mir on 10/18/17.
-//  Copyright © 2017 Artiscovery. All rights reserved.
+//  Copyright © 2017 Moosa Mir. All rights reserved.
 //
-let identifireAlertCell = "AlertTableViewCell"
+let identifireAlertCell = "MMAlertTableViewCell"
 import UIKit
 
 public protocol AlertSheetDelegate {
-    func userDidTapOnElement(fromController:AlertSheetViewController, index:Int, withElements:[Alert])
-    func userDidTapOnDismissAlertController(fromController:AlertSheetViewController)
+    func userDidTapOnElement(fromController:MMAlertSheetViewController, index:Int, withElements:[MMAlert])
+    func userDidTapOnDismissAlertController(fromController:MMAlertSheetViewController)
 }
 
-public class AlertSheetViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+public class MMAlertSheetViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet public var boxView: UIView!
     @IBOutlet var cancelButton: UIButton!
     @IBOutlet var tableView: UITableView!
@@ -21,7 +21,7 @@ public class AlertSheetViewController: UIViewController, UITableViewDelegate, UI
     @IBOutlet public var dismissView: UIView!
     
     public var delegate:AlertSheetDelegate?
-    public var elements:[Alert] = [Alert]()
+    public var elements:[MMAlert] = [MMAlert]()
     
     public var cancelTitle:String? = "Cancel"
     public var fontCancel:UIFont? = UIFont.systemFont(ofSize: 18.0)
@@ -80,7 +80,7 @@ public class AlertSheetViewController: UIViewController, UITableViewDelegate, UI
         
         self.tableView.register(UINib(nibName: identifireAlertCell, bundle: nil), forCellReuseIdentifier: identifireAlertCell)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AlertSheetViewController.dismissView(_:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MMAlertSheetViewController.dismissView(_:)))
         self.dismissView.addGestureRecognizer(tapGesture)
     }
 
@@ -104,7 +104,7 @@ public class AlertSheetViewController: UIViewController, UITableViewDelegate, UI
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:AlertTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: identifireAlertCell, for: indexPath) as! AlertTableViewCell
+        let cell:MMAlertTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: identifireAlertCell, for: indexPath) as! MMAlertTableViewCell
         let element = self.elements[indexPath.row]
         cell.fillData(alert: element)
         

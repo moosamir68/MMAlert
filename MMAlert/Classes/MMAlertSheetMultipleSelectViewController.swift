@@ -1,18 +1,18 @@
 //
-//  ASAlertViewController.swift
-//  Artiscovery
+//  MMAlertSheetMultipleSelectViewController.swift
+//  Moosa Mir
 //
 //  Created by Moosa Mir on 10/18/17.
-//  Copyright © 2017 Artiscovery. All rights reserved.
+//  Copyright © 2017 Moosa Mir. All rights reserved.
 //
 
 import UIKit
 
 public protocol AlertSheetMultipleSelectDelegate {
-    func userDidTapOnConfirmAlertMultipleSelectController(fromController:AlertSheetMultipleSelectViewController, elements:[Alert])
+    func userDidTapOnConfirmAlertMultipleSelectController(fromController:MMAlertSheetMultipleSelectViewController, elements:[MMAlert])
 }
 
-public class AlertSheetMultipleSelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+public class MMAlertSheetMultipleSelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet public var boxView: UIView!
     @IBOutlet var doneButton: UIButton!
     @IBOutlet var tableView: UITableView!
@@ -20,7 +20,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
     @IBOutlet public var dismissView: UIView!
     
     public var delegate:AlertSheetMultipleSelectDelegate?
-    public var elements:[Alert] = [Alert]()
+    public var elements:[MMAlert] = [MMAlert]()
     
     public var titleDone:String? = "Done"
     public var fontDone:UIFont? = UIFont.boldSystemFont(ofSize: 18.0)
@@ -77,7 +77,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
         
         self.tableView.register(UINib(nibName: identifireAlertCell, bundle: nil), forCellReuseIdentifier: identifireAlertCell)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AlertSheetMultipleSelectViewController.dismissView(_:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MMAlertSheetMultipleSelectViewController.dismissView(_:)))
         self.dismissView.addGestureRecognizer(tapGesture)
     }
 
@@ -101,7 +101,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:AlertTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: identifireAlertCell, for: indexPath) as! AlertTableViewCell
+        let cell:MMAlertTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: identifireAlertCell, for: indexPath) as! MMAlertTableViewCell
         let element = self.elements[indexPath.row]
         cell.fillData(alert: element)
         
@@ -112,7 +112,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let alert = self.elements[indexPath.row]
-        let cell:AlertTableViewCell = self.tableView.cellForRow(at: indexPath) as! AlertTableViewCell
+        let cell:MMAlertTableViewCell = self.tableView.cellForRow(at: indexPath) as! MMAlertTableViewCell
         
         if(alert.isChecked)!{
             alert.isChecked = false

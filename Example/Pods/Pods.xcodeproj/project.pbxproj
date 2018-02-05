@@ -12,7 +12,7 @@
 		103228D906B112AA75562E8B17179127 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAC26D78DB33794F9BC456BB1F3404 /* Indicator.swift */; };
 		114397DE4A2DC0204868A79F4BE13769 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11373FF82ED248D8BE23AE3AAA7840D6 /* Filter.swift */; };
 		14B36A636D9819BCC6EDB6B421FD3C77 /* Pods-MMAlert_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8E4BB3D9F5BC2557D420968401FE54 /* Pods-MMAlert_Example-dummy.m */; };
-		16B405696DA6D5D122EF1EE1A8469299 /* AlertAlertJustAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD654A6A5763E7B96384F80F03B835 /* AlertAlertJustAlertViewController.swift */; };
+		16B405696DA6D5D122EF1EE1A8469299 /* MMAlertAlertJustAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD654A6A5763E7B96384F80F03B835 /* MMAlertAlertJustAlertViewController.swift */; };
 		1C15EE9F9161B996B8ED2F8F69A51923 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2AB9928774445E5A7A45056F670D00 /* Foundation.framework */; };
 		2283375C0C99789CF47EEDA0CE9D3D80 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71287AFAF7C48DDADA45D6AB921B36EF /* ImageProcessor.swift */; };
 		288F3919D75D72145E1882605366CED3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2AB9928774445E5A7A45056F670D00 /* Foundation.framework */; };
@@ -22,26 +22,26 @@
 		403E3E170DCF269D5CBA1C530ECA901B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2AB9928774445E5A7A45056F670D00 /* Foundation.framework */; };
 		4074AA6F2557EF7970DEDE67B04433B6 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D10678DCDE585C27DF431ED1FC4FCF /* AnimatedImageView.swift */; };
 		498DC29155467AC093701C1AF5EE3807 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85BC3444EFEC682AEB1D0EBB301C9B1 /* Placeholder.swift */; };
-		4C76FAA7EF72D03B83785AF53CB72DAE /* AlertSheetViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A2AB90E3904A069D21B3A79757854 /* AlertSheetViewController.xib */; };
-		4CE3216AC387B615FD71E5CF5D100456 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E06C15E145F4C2F9E0EAC4A9147BA3 /* Alert.swift */; };
+		4C76FAA7EF72D03B83785AF53CB72DAE /* MMAlertSheetViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A2AB90E3904A069D21B3A79757854 /* MMAlertSheetViewController.xib */; };
+		4CE3216AC387B615FD71E5CF5D100456 /* MMAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E06C15E145F4C2F9E0EAC4A9147BA3 /* MMAlert.swift */; };
 		509A5621DAB44B06929B30ACCA7CA598 /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E018F17F57043559ABAAC952F71499C0 /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5190E6605BEEC04B8883BF6F637BFBF6 /* AlertTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 045275C5F3DD180C276FCF52387D3AAA /* AlertTableViewCell.xib */; };
+		5190E6605BEEC04B8883BF6F637BFBF6 /* MMAlertTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 045275C5F3DD180C276FCF52387D3AAA /* MMAlertTableViewCell.xib */; };
 		6486781D756A9D71FE5C6E56CC9A343F /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6004481E9B47EDEBABB32FAC17846F51 /* ImageCache.swift */; };
 		7029AD7FC53F8CC5921649A63EEADC51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6EEDA0E04CA23EDB950346D7100143 /* UIKit.framework */; };
-		7321BE3C21656DFE004F6442AFA43B74 /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E529B4FFAD76F592B06FA4B5C0EE672A /* AlertTableViewCell.swift */; };
-		7487F32AAF361938F88AA733BAD0BF9A /* AlertAlertViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 31C2DCC619BFCEEB13E0ED0DEF9C12C9 /* AlertAlertViewController.xib */; };
+		7321BE3C21656DFE004F6442AFA43B74 /* MMAlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E529B4FFAD76F592B06FA4B5C0EE672A /* MMAlertTableViewCell.swift */; };
+		7487F32AAF361938F88AA733BAD0BF9A /* MMAlertAlertViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 31C2DCC619BFCEEB13E0ED0DEF9C12C9 /* MMAlertAlertViewController.xib */; };
 		7B2A61E55C43E9B12E5B7DD852456AEE /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ACEF73DDC51ADD99C0C6BBE3FAC8E4 /* ImageTransition.swift */; };
 		84CF440A4E3CCDEE93FA2475748A9934 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B50DBD55C753BC7987EB554E57400DD2 /* CFNetwork.framework */; };
 		88355ECD2D9B3505130DA24006480D5D /* MMAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3DBAE0198BBA496F7F5D97D4A7ED1 /* MMAlert-dummy.m */; };
-		8E32D64B157E9EB1C77EB5F1C94A5081 /* AlertAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACB4E257E67ACC087576E82130C4D3 /* AlertAlertViewController.swift */; };
+		8E32D64B157E9EB1C77EB5F1C94A5081 /* MMAlertAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACB4E257E67ACC087576E82130C4D3 /* MMAlertAlertViewController.swift */; };
 		95156987028D309F91AC55FBDFE01643 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8A103E3A4EE9FF2F4E47747997234F /* Kingfisher-dummy.m */; };
 		A8A79840E81BFA3D8DCC29BE71F1AEC4 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9F1FF08D5D1E848E01F627B669B79 /* KingfisherManager.swift */; };
 		A9D2A6547EE5F6532EF8D1F1870BF158 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AB57F53E7A8C9B43E7A7FCC1AA411 /* CacheSerializer.swift */; };
-		ADDADEBC89007B2C8EAA8CE91B9C3AA4 /* AlertSheetMultipleSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D8A636913DF6F6255F098839B8A549 /* AlertSheetMultipleSelectViewController.swift */; };
+		ADDADEBC89007B2C8EAA8CE91B9C3AA4 /* MMAlertSheetMultipleSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D8A636913DF6F6255F098839B8A549 /* MMAlertSheetMultipleSelectViewController.swift */; };
 		AF52361B55F3B776DD82A7F90AD18EE0 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE62EDB82ECE15B9B8E343EA9376717B /* Kingfisher.framework */; };
 		B564B930C3B6CCFCC109ABF374B21CE6 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6915372D6C183E4ADBAD6DDB4BA5999 /* ImageModifier.swift */; };
 		B924069CD75769E22765912C66A87BF3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE40A7EAEF227D102A4A633F1DD74B7F /* Image.swift */; };
-		B9F76DD0BD938D7C0FDECC97203C7950 /* AlertSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67862897CA1AD6EB365A79717AE40F43 /* AlertSheetViewController.swift */; };
+		B9F76DD0BD938D7C0FDECC97203C7950 /* MMAlertSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67862897CA1AD6EB365A79717AE40F43 /* MMAlertSheetViewController.swift */; };
 		BA4DF38E820FF6B40FFABF8B1BBCC615 /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = CF58A2C8B2D1E80C830DD92F91F41CBD /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE9FB5E8188E0B68DB277B09A06E79BA /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF81C7B8A9A0ED0708E9264F91C23FB8 /* ImagePrefetcher.swift */; };
 		C32C7FE70764DE37935F6A5D80CB17C7 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91647A8F0DB816B83E9D56525FA36939 /* RequestModifier.swift */; };
@@ -51,8 +51,8 @@
 		DA7A5ECA4C0B39776007BE89B99227EF /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DA0EE7A103885B0606126A579FBFF3 /* ImageDownloader.swift */; };
 		E9E5F082818BE1AA4722E77DD066450F /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593766F839E7E059C1FFDFEFC7279F59 /* Kingfisher.swift */; };
 		EA284183FD27B56F56A611C88A74DC5B /* Pods-MMAlert_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9953AE721F47140604B62251C61F4464 /* Pods-MMAlert_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC7CB7605DBD764F3E0E2CAF1329FE58 /* AlertSheetMultipleSelectViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 791739FE5A584F0A097292946378B822 /* AlertSheetMultipleSelectViewController.xib */; };
-		FE82FC66EC3D5BC5E84764220455A18F /* AlertAlertJustAlertViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 197A809FEABB37CFD1FCBD07ADCF6AFA /* AlertAlertJustAlertViewController.xib */; };
+		FC7CB7605DBD764F3E0E2CAF1329FE58 /* MMAlertSheetMultipleSelectViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 791739FE5A584F0A097292946378B822 /* MMAlertSheetMultipleSelectViewController.xib */; };
+		FE82FC66EC3D5BC5E84764220455A18F /* MMAlertAlertJustAlertViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 197A809FEABB37CFD1FCBD07ADCF6AFA /* MMAlertAlertJustAlertViewController.xib */; };
 		FED97351EC4705507DAB175106B819C8 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D513054D22F0F7DF537DAE691DF098F /* UIButton+Kingfisher.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,40 +82,40 @@
 
 /* Begin PBXFileReference section */
 		02DA0EE7A103885B0606126A579FBFF3 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
-		045275C5F3DD180C276FCF52387D3AAA /* AlertTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = AlertTableViewCell.xib; sourceTree = "<group>"; };
+		045275C5F3DD180C276FCF52387D3AAA /* MMAlertTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = MMAlertTableViewCell.xib; sourceTree = "<group>"; };
 		0DD9F1FF08D5D1E848E01F627B669B79 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
 		11373FF82ED248D8BE23AE3AAA7840D6 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
 		17D10678DCDE585C27DF431ED1FC4FCF /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
-		197A809FEABB37CFD1FCBD07ADCF6AFA /* AlertAlertJustAlertViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlertAlertJustAlertViewController.xib; path = MMAlert/Classes/AlertAlertJustAlertViewController.xib; sourceTree = "<group>"; };
+		197A809FEABB37CFD1FCBD07ADCF6AFA /* MMAlertAlertJustAlertViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MMAlertAlertJustAlertViewController.xib; path = MMAlert/Classes/MMAlertAlertJustAlertViewController.xib; sourceTree = "<group>"; };
 		1B8E4BB3D9F5BC2557D420968401FE54 /* Pods-MMAlert_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMAlert_Example-dummy.m"; sourceTree = "<group>"; };
-		1CB64D50308F34FE9ECDBE07F4235EAD /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		1CB64D50308F34FE9ECDBE07F4235EAD /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kingfisher.modulemap; sourceTree = "<group>"; };
 		1D1AB57F53E7A8C9B43E7A7FCC1AA411 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
 		1D513054D22F0F7DF537DAE691DF098F /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
 		2622464D6C5A953E3CEF1E8D3BB73583 /* MMAlert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMAlert.xcconfig; sourceTree = "<group>"; };
 		269D639247F95B7F300C28C0D88CF50F /* Pods-MMAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2C1A7B9D9ABC7E82FAEFC2CD710096F5 /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
 		2C5CE2BEB7FCA92285DE8E7783FA5398 /* Pods-MMAlert_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMAlert_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		31C2DCC619BFCEEB13E0ED0DEF9C12C9 /* AlertAlertViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlertAlertViewController.xib; path = MMAlert/Classes/AlertAlertViewController.xib; sourceTree = "<group>"; };
-		32CE3013B2B64C213093ACC96E1CA083 /* Pods-MMAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MMAlert_Example.modulemap"; sourceTree = "<group>"; };
+		31C2DCC619BFCEEB13E0ED0DEF9C12C9 /* MMAlertAlertViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MMAlertAlertViewController.xib; path = MMAlert/Classes/MMAlertAlertViewController.xib; sourceTree = "<group>"; };
+		32CE3013B2B64C213093ACC96E1CA083 /* Pods-MMAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MMAlert_Example.modulemap"; sourceTree = "<group>"; };
 		368E1D60812827227B276BE49A7B080C /* MMAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMAlert-prefix.pch"; sourceTree = "<group>"; };
-		3B023A5E27929F5AE5908CE9A2A247FD /* MMAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MMAlert.modulemap; sourceTree = "<group>"; };
+		3B023A5E27929F5AE5908CE9A2A247FD /* MMAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MMAlert.modulemap; sourceTree = "<group>"; };
 		3DF9EA4E7E8A6B7A4EDA54F899FEBE4E /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
-		40A1C581556BBDF297E46099D2369C11 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		463E1F490471E146136DA7BA85D06106 /* MMAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMAlert.framework; path = MMAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A1C581556BBDF297E46099D2369C11 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		463E1F490471E146136DA7BA85D06106 /* MMAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2AB9928774445E5A7A45056F670D00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4C0A2AB90E3904A069D21B3A79757854 /* AlertSheetViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlertSheetViewController.xib; path = MMAlert/Classes/AlertSheetViewController.xib; sourceTree = "<group>"; };
-		50E06C15E145F4C2F9E0EAC4A9147BA3 /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = MMAlert/Classes/Alert.swift; sourceTree = "<group>"; };
+		4C0A2AB90E3904A069D21B3A79757854 /* MMAlertSheetViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MMAlertSheetViewController.xib; path = MMAlert/Classes/MMAlertSheetViewController.xib; sourceTree = "<group>"; };
+		50E06C15E145F4C2F9E0EAC4A9147BA3 /* MMAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMAlert.swift; path = MMAlert/Classes/MMAlert.swift; sourceTree = "<group>"; };
 		51313B06008A49CEE34BA3780BDE1DF3 /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
 		593766F839E7E059C1FFDFEFC7279F59 /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
 		6004481E9B47EDEBABB32FAC17846F51 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
 		641EFFF236A856B4166FEB2B06E3B66C /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
-		67862897CA1AD6EB365A79717AE40F43 /* AlertSheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertSheetViewController.swift; path = MMAlert/Classes/AlertSheetViewController.swift; sourceTree = "<group>"; };
+		67862897CA1AD6EB365A79717AE40F43 /* MMAlertSheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMAlertSheetViewController.swift; path = MMAlert/Classes/MMAlertSheetViewController.swift; sourceTree = "<group>"; };
 		6DDB45D24CB4ACF2C532A122D0947DE1 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
 		71287AFAF7C48DDADA45D6AB921B36EF /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
-		791739FE5A584F0A097292946378B822 /* AlertSheetMultipleSelectViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlertSheetMultipleSelectViewController.xib; path = MMAlert/Classes/AlertSheetMultipleSelectViewController.xib; sourceTree = "<group>"; };
+		791739FE5A584F0A097292946378B822 /* MMAlertSheetMultipleSelectViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MMAlertSheetMultipleSelectViewController.xib; path = MMAlert/Classes/MMAlertSheetMultipleSelectViewController.xib; sourceTree = "<group>"; };
 		7CFE52F94F150EFB4D10237BEA15350A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91647A8F0DB816B83E9D56525FA36939 /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93C720354C147C7E22D89671593668FD /* Pods-MMAlert_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMAlert_Example-resources.sh"; sourceTree = "<group>"; };
 		94CEED5268EF1C0240DF7112906CDB87 /* MMAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMAlert-umbrella.h"; sourceTree = "<group>"; };
 		9953AE721F47140604B62251C61F4464 /* Pods-MMAlert_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMAlert_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -135,17 +135,17 @@
 		CF009B1327811FDDBA03D62DB9B6CAFC /* Pods-MMAlert_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMAlert_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CF58A2C8B2D1E80C830DD92F91F41CBD /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
 		DA4898867061D203311A4AC3C7A70B2F /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
-		DCB6F2D0323D03162A2E0AD23BC8380C /* Pods_MMAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MMAlert_Example.framework; path = "Pods-MMAlert_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB6F2D0323D03162A2E0AD23BC8380C /* Pods_MMAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E018F17F57043559ABAAC952F71499C0 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
 		E2D1B50E6653ACDBFDF0AB67BC9388F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E529B4FFAD76F592B06FA4B5C0EE672A /* AlertTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
+		E529B4FFAD76F592B06FA4B5C0EE672A /* MMAlertTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MMAlertTableViewCell.swift; sourceTree = "<group>"; };
 		EF8A103E3A4EE9FF2F4E47747997234F /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
 		F0088FC709E3907A18952C072C9C8368 /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
 		F17EE7AC8C1221536C58B0E4B8AF2C1B /* Pods-MMAlert_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMAlert_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F7ACB4E257E67ACC087576E82130C4D3 /* AlertAlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertAlertViewController.swift; path = MMAlert/Classes/AlertAlertViewController.swift; sourceTree = "<group>"; };
+		F7ACB4E257E67ACC087576E82130C4D3 /* MMAlertAlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMAlertAlertViewController.swift; path = MMAlert/Classes/MMAlertAlertViewController.swift; sourceTree = "<group>"; };
 		F984C002A347E61B7FFC35431C43AB97 /* Pods-MMAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F9D8A636913DF6F6255F098839B8A549 /* AlertSheetMultipleSelectViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertSheetMultipleSelectViewController.swift; path = MMAlert/Classes/AlertSheetMultipleSelectViewController.swift; sourceTree = "<group>"; };
-		FCFD654A6A5763E7B96384F80F03B835 /* AlertAlertJustAlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertAlertJustAlertViewController.swift; path = MMAlert/Classes/AlertAlertJustAlertViewController.swift; sourceTree = "<group>"; };
+		F9D8A636913DF6F6255F098839B8A549 /* MMAlertSheetMultipleSelectViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMAlertSheetMultipleSelectViewController.swift; path = MMAlert/Classes/MMAlertSheetMultipleSelectViewController.swift; sourceTree = "<group>"; };
+		FCFD654A6A5763E7B96384F80F03B835 /* MMAlertAlertJustAlertViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMAlertAlertJustAlertViewController.swift; path = MMAlert/Classes/MMAlertAlertJustAlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,15 +182,15 @@
 		5D37292CE1137B841A34AAC9B0B6E50C /* MMAlert */ = {
 			isa = PBXGroup;
 			children = (
-				50E06C15E145F4C2F9E0EAC4A9147BA3 /* Alert.swift */,
-				FCFD654A6A5763E7B96384F80F03B835 /* AlertAlertJustAlertViewController.swift */,
-				197A809FEABB37CFD1FCBD07ADCF6AFA /* AlertAlertJustAlertViewController.xib */,
-				F7ACB4E257E67ACC087576E82130C4D3 /* AlertAlertViewController.swift */,
-				31C2DCC619BFCEEB13E0ED0DEF9C12C9 /* AlertAlertViewController.xib */,
-				F9D8A636913DF6F6255F098839B8A549 /* AlertSheetMultipleSelectViewController.swift */,
-				791739FE5A584F0A097292946378B822 /* AlertSheetMultipleSelectViewController.xib */,
-				67862897CA1AD6EB365A79717AE40F43 /* AlertSheetViewController.swift */,
-				4C0A2AB90E3904A069D21B3A79757854 /* AlertSheetViewController.xib */,
+				50E06C15E145F4C2F9E0EAC4A9147BA3 /* MMAlert.swift */,
+				FCFD654A6A5763E7B96384F80F03B835 /* MMAlertAlertJustAlertViewController.swift */,
+				197A809FEABB37CFD1FCBD07ADCF6AFA /* MMAlertAlertJustAlertViewController.xib */,
+				F7ACB4E257E67ACC087576E82130C4D3 /* MMAlertAlertViewController.swift */,
+				31C2DCC619BFCEEB13E0ED0DEF9C12C9 /* MMAlertAlertViewController.xib */,
+				F9D8A636913DF6F6255F098839B8A549 /* MMAlertSheetMultipleSelectViewController.swift */,
+				791739FE5A584F0A097292946378B822 /* MMAlertSheetMultipleSelectViewController.xib */,
+				67862897CA1AD6EB365A79717AE40F43 /* MMAlertSheetViewController.swift */,
+				4C0A2AB90E3904A069D21B3A79757854 /* MMAlertSheetViewController.xib */,
 				F5CF12BF0A901412BD8E2B3414999844 /* Support Files */,
 				C3B3A5D9FA15D0C37E5F2A7B215DB8DA /* View */,
 			);
@@ -239,7 +239,6 @@
 				1D513054D22F0F7DF537DAE691DF098F /* UIButton+Kingfisher.swift */,
 				AF062B3A1BF1058E5F43597392630FAC /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -277,8 +276,8 @@
 		C3B3A5D9FA15D0C37E5F2A7B215DB8DA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E529B4FFAD76F592B06FA4B5C0EE672A /* AlertTableViewCell.swift */,
-				045275C5F3DD180C276FCF52387D3AAA /* AlertTableViewCell.xib */,
+				E529B4FFAD76F592B06FA4B5C0EE672A /* MMAlertTableViewCell.swift */,
+				045275C5F3DD180C276FCF52387D3AAA /* MMAlertTableViewCell.xib */,
 			);
 			name = View;
 			path = MMAlert/Classes/View;
@@ -501,17 +500,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CE3216AC387B615FD71E5CF5D100456 /* Alert.swift in Sources */,
-				16B405696DA6D5D122EF1EE1A8469299 /* AlertAlertJustAlertViewController.swift in Sources */,
-				FE82FC66EC3D5BC5E84764220455A18F /* AlertAlertJustAlertViewController.xib in Sources */,
-				8E32D64B157E9EB1C77EB5F1C94A5081 /* AlertAlertViewController.swift in Sources */,
-				7487F32AAF361938F88AA733BAD0BF9A /* AlertAlertViewController.xib in Sources */,
-				ADDADEBC89007B2C8EAA8CE91B9C3AA4 /* AlertSheetMultipleSelectViewController.swift in Sources */,
-				FC7CB7605DBD764F3E0E2CAF1329FE58 /* AlertSheetMultipleSelectViewController.xib in Sources */,
-				B9F76DD0BD938D7C0FDECC97203C7950 /* AlertSheetViewController.swift in Sources */,
-				4C76FAA7EF72D03B83785AF53CB72DAE /* AlertSheetViewController.xib in Sources */,
-				7321BE3C21656DFE004F6442AFA43B74 /* AlertTableViewCell.swift in Sources */,
-				5190E6605BEEC04B8883BF6F637BFBF6 /* AlertTableViewCell.xib in Sources */,
+				4CE3216AC387B615FD71E5CF5D100456 /* MMAlert.swift in Sources */,
+				16B405696DA6D5D122EF1EE1A8469299 /* MMAlertAlertJustAlertViewController.swift in Sources */,
+				FE82FC66EC3D5BC5E84764220455A18F /* MMAlertAlertJustAlertViewController.xib in Sources */,
+				8E32D64B157E9EB1C77EB5F1C94A5081 /* MMAlertAlertViewController.swift in Sources */,
+				7487F32AAF361938F88AA733BAD0BF9A /* MMAlertAlertViewController.xib in Sources */,
+				ADDADEBC89007B2C8EAA8CE91B9C3AA4 /* MMAlertSheetMultipleSelectViewController.swift in Sources */,
+				FC7CB7605DBD764F3E0E2CAF1329FE58 /* MMAlertSheetMultipleSelectViewController.xib in Sources */,
+				B9F76DD0BD938D7C0FDECC97203C7950 /* MMAlertSheetViewController.swift in Sources */,
+				4C76FAA7EF72D03B83785AF53CB72DAE /* MMAlertSheetViewController.xib in Sources */,
+				7321BE3C21656DFE004F6442AFA43B74 /* MMAlertTableViewCell.swift in Sources */,
+				5190E6605BEEC04B8883BF6F637BFBF6 /* MMAlertTableViewCell.xib in Sources */,
 				88355ECD2D9B3505130DA24006480D5D /* MMAlert-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

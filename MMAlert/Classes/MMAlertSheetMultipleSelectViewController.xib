@@ -10,14 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertSheetViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MMAlertSheetMultipleSelectViewController" customModule="MMAlert" customModuleProvider="target">
             <connections>
-                <outlet property="boxView" destination="Zti-Ep-ec5" id="h3u-w8-mtx"/>
-                <outlet property="cancelButton" destination="huy-Gr-6Ja" id="CST-Qs-DSk"/>
-                <outlet property="dismissView" destination="xEt-XY-SA8" id="581-JK-yXr"/>
-                <outlet property="tableView" destination="Wlt-uk-Bd6" id="ZR1-bd-VSF"/>
-                <outlet property="tableViewConstraintHeight" destination="z9F-ZN-LSY" id="xEp-KX-gwe"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="boxView" destination="Zti-Ep-ec5" id="656-bL-6yr"/>
+                <outlet property="dismissView" destination="xEt-XY-SA8" id="buO-UN-Fug"/>
+                <outlet property="doneButton" destination="huy-Gr-6Ja" id="pnQ-Pe-auQ"/>
+                <outlet property="tableView" destination="Wlt-uk-Bd6" id="Qn5-rT-sEK"/>
+                <outlet property="tableViewConstraintHeight" destination="z9F-ZN-LSY" id="YrQ-gc-zUQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="g7c-g9-xMd"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -35,7 +35,7 @@
                             </constraints>
                             <state key="normal" title="Cancel"/>
                             <connections>
-                                <action selector="dismissView:" destination="-1" eventType="touchUpInside" id="1I8-fK-k7v"/>
+                                <action selector="userDidTapOnDone:" destination="-1" eventType="touchUpInside" id="rwJ-uj-uJv"/>
                             </connections>
                         </button>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wlt-uk-Bd6">
