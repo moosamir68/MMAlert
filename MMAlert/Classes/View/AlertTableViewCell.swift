@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AlertTableViewCell: UITableViewCell {
     @IBOutlet var boxView: UIView!
@@ -54,7 +55,7 @@ class AlertTableViewCell: UITableViewCell {
                 self.itemImageView.image = alert?.image
             }else if(alert?.urlImage != nil){
                 let url = URL(string: (alert?.urlImage)!)
-//                self.itemImageView.kf.setImage(with: url)
+                self.itemImageView.kf.setImage(with: url)
             }else{
                 self.itemImageView.image = nil
             }

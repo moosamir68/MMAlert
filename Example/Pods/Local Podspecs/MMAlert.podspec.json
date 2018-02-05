@@ -1,9 +1,9 @@
 {
   "name": "MMAlert",
   "version": "0.1.0",
-  "summary": "A short description of MMAlert.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Moosa Mir/MMAlert",
+  "summary": "A short summury of MMAlert.",
+  "description": "A short description of MMAlert.",
+  "homepage": "https://github.com/moosamir68/MMAlert",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,17 @@
     "Moosa Mir": "moosamir68@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Moosa Mir/MMAlert.git",
+    "git": "https://github.com/moosamir68/MMAlert.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "MMAlert/Classes/**/*"
+  "source_files": "MMAlert/Classes/**/*",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Kingfisher": [
+      "~> 4.4.0"
+    ]
+  }
 }
