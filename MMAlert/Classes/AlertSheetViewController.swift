@@ -18,7 +18,7 @@ public class AlertSheetViewController: UIViewController, UITableViewDelegate, UI
     @IBOutlet var cancelButton: UIButton!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var tableViewConstraintHeight: NSLayoutConstraint!
-    @IBOutlet var dismissView: UIView!
+    @IBOutlet public var dismissView: UIView!
     
     public var delegate:AlertSheetDelegate?
     public var elements:[Alert]?
