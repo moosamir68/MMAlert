@@ -14,7 +14,7 @@ public protocol AlertSheetDelegate {
 }
 
 public class AlertSheetViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet var boxView: UIView!
+    @IBOutlet public var boxView: UIView!
     @IBOutlet var cancelButton: UIButton!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var tableViewConstraintHeight: NSLayoutConstraint!

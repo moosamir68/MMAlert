@@ -16,7 +16,7 @@ public protocol AlertAlertDelegate {
 public class AlertAlertViewController: UIViewController {
 
     @IBOutlet var contanerViewConstraintHeight: NSLayoutConstraint!
-    @IBOutlet var boxView: UIView!
+    @IBOutlet public var boxView: UIView!
     @IBOutlet var containerView: UIView!
     @IBOutlet var headerLabel: UILabel!
     @IBOutlet var contentLabel: UILabel!

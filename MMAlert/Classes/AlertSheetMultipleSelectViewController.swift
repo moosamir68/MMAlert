@@ -13,7 +13,7 @@ public protocol AlertSheetMultipleSelectDelegate {
 }
 
 public class AlertSheetMultipleSelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet var boxView: UIView!
+    @IBOutlet public var boxView: UIView!
     @IBOutlet var doneButton: UIButton!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var tableViewConstraintHeight: NSLayoutConstraint!
