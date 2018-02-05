@@ -8,11 +8,11 @@
 
 import UIKit
 
-public protocol AlertJustAlertDelegate {
-    func userDidTapOnCancelButton(fromController:AlertJustAlertViewController?)
+public protocol AlertAlertJustAlertDelegate {
+    func userDidTapOnCancelButton(fromController:AlertAlertJustAlertViewController?)
 }
 
-public class AlertJustAlertViewController: UIViewController {
+public class AlertAlertJustAlertViewController: UIViewController {
     @IBOutlet var contanerViewConstraintHeight: NSLayoutConstraint!
     @IBOutlet var boxView: UIView!
     @IBOutlet var containerView: UIView!
@@ -22,7 +22,7 @@ public class AlertJustAlertViewController: UIViewController {
     @IBOutlet var lineUnerHeaderView: UIView!
     @IBOutlet var lineUnerContentView: UIView!
     
-    public var delegate:AlertJustAlertDelegate?
+    public var delegate:AlertAlertJustAlertDelegate?
     
     public var cancelTitle:String? = "Cancel"
     public var titleHeader:String? = ""

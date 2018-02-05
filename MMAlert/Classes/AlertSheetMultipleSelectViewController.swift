@@ -8,18 +8,18 @@
 
 import UIKit
 
-public protocol AlertMultipleSelectDelegate {
-    func userDidTapOnConfirmAlertMultipleSelectController(fromController:AlertMultipleSelectViewController?, elements:[Alert]?)
+public protocol AlertSheetMultipleSelectDelegate {
+    func userDidTapOnConfirmAlertMultipleSelectController(fromController:AlertSheetMultipleSelectViewController?, elements:[Alert]?)
 }
 
-public class AlertMultipleSelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+public class AlertSheetMultipleSelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var boxView: UIView!
     @IBOutlet var doneButton: UIButton!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var tableViewConstraintHeight: NSLayoutConstraint!
     @IBOutlet var dismissView: UIView!
     
-    public var delegate:AlertMultipleSelectDelegate?
+    public var delegate:AlertSheetMultipleSelectDelegate?
     public var elements:[Alert]?
     
     public var titleDone:String? = "Done"
@@ -77,7 +77,7 @@ public class AlertMultipleSelectViewController: UIViewController, UITableViewDel
         
         self.tableView.register(UINib(nibName: identifireAlertCell, bundle: nil), forCellReuseIdentifier: identifireAlertCell)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AlertViewController.dismissView(_:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AlertSheetMultipleSelectViewController.dismissView(_:)))
         self.dismissView.addGestureRecognizer(tapGesture)
     }
 

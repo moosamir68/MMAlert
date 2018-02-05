@@ -8,19 +8,19 @@
 let identifireAlertCell = "AlertTableViewCell"
 import UIKit
 
-public protocol AlertDelegate {
-    func userDidTapOnElement(fromController:AlertViewController?, index:Int?, withElements:[Alert]?)
-    func userDidTapOnDismissAlertController(fromController:AlertViewController?)
+public protocol AlertSheetDelegate {
+    func userDidTapOnElement(fromController:AlertSheetViewController?, index:Int?, withElements:[Alert]?)
+    func userDidTapOnDismissAlertController(fromController:AlertSheetViewController?)
 }
 
-public class AlertViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+public class AlertSheetViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var boxView: UIView!
     @IBOutlet var cancelButton: UIButton!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var tableViewConstraintHeight: NSLayoutConstraint!
     @IBOutlet var dismissView: UIView!
     
-    public var delegate:AlertDelegate?
+    public var delegate:AlertSheetDelegate?
     public var elements:[Alert]?
     
     public var cancelTitle:String? = "Cancel"
@@ -80,7 +80,7 @@ public class AlertViewController: UIViewController, UITableViewDelegate, UITable
         
         self.tableView.register(UINib(nibName: identifireAlertCell, bundle: nil), forCellReuseIdentifier: identifireAlertCell)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AlertViewController.dismissView(_:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AlertSheetViewController.dismissView(_:)))
         self.dismissView.addGestureRecognizer(tapGesture)
     }
 
