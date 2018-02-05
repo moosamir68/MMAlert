@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol AlertSheetMultipleSelectDelegate {
-    func userDidTapOnConfirmAlertMultipleSelectController(fromController:AlertSheetMultipleSelectViewController?, elements:[Alert])
+    func userDidTapOnConfirmAlertMultipleSelectController(fromController:AlertSheetMultipleSelectViewController, elements:[Alert])
 }
 
 public class AlertSheetMultipleSelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {

@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol AlertAlertJustAlertDelegate {
-    func userDidTapOnCancelButton(fromController:AlertAlertJustAlertViewController?)
+    func userDidTapOnCancelButton(fromController:AlertAlertJustAlertViewController)
 }
 
 public class AlertAlertJustAlertViewController: UIViewController {

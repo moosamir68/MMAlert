@@ -9,8 +9,8 @@
 import UIKit
 
 public protocol AlertAlertDelegate {
-    func userDidTapOnOkButton(fromController:AlertAlertViewController?)
-    func userDidTapOnCancelButton(fromController:AlertAlertViewController?)
+    func userDidTapOnOkButton(fromController:AlertAlertViewController)
+    func userDidTapOnCancelButton(fromController:AlertAlertViewController)
 }
 
 public class AlertAlertViewController: UIViewController {
