@@ -126,7 +126,7 @@ public class AlertSheetViewController: UIViewController, UITableViewDelegate, UI
         return true
     }
     
-    @IBAction func dismissView(_ sender: AnyObject) {
+    @IBAction public func dismissView(_ sender: AnyObject) {
         self.delegate?.userDidTapOnDismissAlertController(fromController: self)
     }
 }

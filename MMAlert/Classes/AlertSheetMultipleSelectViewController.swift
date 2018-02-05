@@ -136,7 +136,7 @@ public class AlertSheetMultipleSelectViewController: UIViewController, UITableVi
         self.delegate?.userDidTapOnConfirmAlertMultipleSelectController(fromController: self, elements: self.elements)
     }
     
-    @IBAction func dismissView(_ sender: AnyObject) {
+    @IBAction public func dismissView(_ sender: AnyObject) {
         self.delegate?.userDidTapOnConfirmAlertMultipleSelectController(fromController: self, elements: self.elements)
     }
 }
