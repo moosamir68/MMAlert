@@ -13,11 +13,11 @@ public protocol AlertSheetMultipleSelectDelegate {
 }
 
 public class MMAlertSheetMultipleSelectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet public var boxView: UIView!
+    @IBOutlet var boxView: UIView!
     @IBOutlet var doneButton: UIButton!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var tableViewConstraintHeight: NSLayoutConstraint!
-    @IBOutlet public var dismissView: UIView!
+    @IBOutlet var dismissView: UIView!
     
     public var delegate:AlertSheetMultipleSelectDelegate?
     public var elements:[MMAlert] = [MMAlert]()

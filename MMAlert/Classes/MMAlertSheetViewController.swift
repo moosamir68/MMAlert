@@ -14,11 +14,11 @@ public protocol AlertSheetDelegate {
 }
 
 public class MMAlertSheetViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet public var boxView: UIView!
+    @IBOutlet var boxView: UIView!
     @IBOutlet var cancelButton: UIButton!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var tableViewConstraintHeight: NSLayoutConstraint!
-    @IBOutlet public var dismissView: UIView!
+    @IBOutlet var dismissView: UIView!
     
     public var delegate:AlertSheetDelegate?
     public var elements:[MMAlert] = [MMAlert]()

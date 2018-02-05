@@ -14,8 +14,8 @@ public protocol AlertAlertJustAlertDelegate {
 
 public class MMAlertAlertJustAlertViewController: UIViewController {
     @IBOutlet var contanerViewConstraintHeight: NSLayoutConstraint!
-    @IBOutlet public var boxView: UIView!
-    @IBOutlet public var containerView: UIView!
+    @IBOutlet var boxView: UIView!
+    @IBOutlet var containerView: UIView!
     @IBOutlet var headerLabel: UILabel!
     @IBOutlet var contentLabel: UILabel!
     @IBOutlet var CancelButton: UIButton!

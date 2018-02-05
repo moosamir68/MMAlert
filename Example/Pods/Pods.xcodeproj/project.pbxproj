@@ -111,6 +111,10 @@
 		641EFFF236A856B4166FEB2B06E3B66C /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
 		67862897CA1AD6EB365A79717AE40F43 /* MMAlertSheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMAlertSheetViewController.swift; path = MMAlert/Classes/MMAlertSheetViewController.swift; sourceTree = "<group>"; };
 		6DDB45D24CB4ACF2C532A122D0947DE1 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
+		6E28C1412028B46200F29DB1 /* AnimationAlertAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationAlertAlertController.swift; sourceTree = "<group>"; };
+		6E28C1422028B46200F29DB1 /* AnimationAlertAlertjustAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationAlertAlertjustAlertController.swift; sourceTree = "<group>"; };
+		6E28C1432028B46200F29DB1 /* MMAnimationAlertSheetMultipleSelectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMAnimationAlertSheetMultipleSelectController.swift; sourceTree = "<group>"; };
+		6E28C1442028B46200F29DB1 /* MMAnimationAlertSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMAnimationAlertSheetController.swift; sourceTree = "<group>"; };
 		71287AFAF7C48DDADA45D6AB921B36EF /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
 		791739FE5A584F0A097292946378B822 /* MMAlertSheetMultipleSelectViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MMAlertSheetMultipleSelectViewController.xib; path = MMAlert/Classes/MMAlertSheetMultipleSelectViewController.xib; sourceTree = "<group>"; };
 		7CFE52F94F150EFB4D10237BEA15350A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 		5D37292CE1137B841A34AAC9B0B6E50C /* MMAlert */ = {
 			isa = PBXGroup;
 			children = (
+				6E28C1402028B46200F29DB1 /* Transition */,
 				50E06C15E145F4C2F9E0EAC4A9147BA3 /* MMAlert.swift */,
 				FCFD654A6A5763E7B96384F80F03B835 /* MMAlertAlertJustAlertViewController.swift */,
 				197A809FEABB37CFD1FCBD07ADCF6AFA /* MMAlertAlertJustAlertViewController.xib */,
@@ -196,6 +201,18 @@
 			);
 			name = MMAlert;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		6E28C1402028B46200F29DB1 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				6E28C1412028B46200F29DB1 /* AnimationAlertAlertController.swift */,
+				6E28C1422028B46200F29DB1 /* AnimationAlertAlertjustAlertController.swift */,
+				6E28C1432028B46200F29DB1 /* MMAnimationAlertSheetMultipleSelectController.swift */,
+				6E28C1442028B46200F29DB1 /* MMAnimationAlertSheetController.swift */,
+			);
+			name = Transition;
+			path = MMAlert/Classes/Transition;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
