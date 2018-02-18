@@ -51,7 +51,7 @@ public class AnimationFromControllerToAlertAlertController: NSObject, UIViewCont
         toVC.view.layoutSubviews()
         
         //animation block
-        UIView.animate(withDuration: TimeInterval(AnimationFromControllerToAlertController.animationDuration),
+        UIView.animate(withDuration: TimeInterval(AnimationFromControllerToAlertAlertController.animationDuration),
                        delay: 0.0,
                        usingSpringWithDamping: 0.9,
                        initialSpringVelocity: 0.9,
@@ -75,7 +75,7 @@ public class AnimationFromAlertAlertControllerToFromController: NSObject,UIViewC
     
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval
     {
-        return AnimationFromAlertControllerToController.animationDuration
+        return AnimationFromAlertAlertControllerToFromController.animationDuration
     }
     
     // This method can only  be a nop if the transition is interactive and not a percentDriven interactive transition.
@@ -98,7 +98,7 @@ public class AnimationFromAlertAlertControllerToFromController: NSObject,UIViewC
             }
         }
         
-        UIView.animate(withDuration: TimeInterval(AnimationFromControllerToAlertController.animationDuration),
+        UIView.animate(withDuration: TimeInterval(AnimationFromAlertAlertControllerToFromController.animationDuration),
                        delay: 0.0,
                        usingSpringWithDamping: 0.9,
                        initialSpringVelocity: 0.9,

@@ -14,7 +14,7 @@ public class AnimationFromControllerToAlertJustAlertController: NSObject, UIView
     
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval
     {
-        return AnimationFromControllerToAlertAlertController.animationDuration
+        return AnimationFromControllerToAlertJustAlertController.animationDuration
     }
     
     // This method can only  be a nop if the transition is interactive and not a percentDriven interactive transition.
@@ -51,7 +51,7 @@ public class AnimationFromControllerToAlertJustAlertController: NSObject, UIView
         toVC.view.layoutSubviews()
         
         //animation block
-        UIView.animate(withDuration: TimeInterval(AnimationFromControllerToAlertController.animationDuration),
+        UIView.animate(withDuration: TimeInterval(AnimationFromControllerToAlertJustAlertController.animationDuration),
                        delay: 0.0,
                        usingSpringWithDamping: 0.9,
                        initialSpringVelocity: 0.9,
@@ -75,7 +75,7 @@ public class AnimationFromAlertJustAlertControllerToFromController: NSObject,UIV
     
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval
     {
-        return AnimationFromAlertControllerToController.animationDuration
+        return AnimationFromAlertJustAlertControllerToFromController.animationDuration
     }
     
     // This method can only  be a nop if the transition is interactive and not a percentDriven interactive transition.
@@ -98,7 +98,7 @@ public class AnimationFromAlertJustAlertControllerToFromController: NSObject,UIV
             }
         }
         
-        UIView.animate(withDuration: TimeInterval(AnimationFromControllerToAlertController.animationDuration),
+        UIView.animate(withDuration: TimeInterval(AnimationFromAlertJustAlertControllerToFromController.animationDuration),
                        delay: 0.0,
                        usingSpringWithDamping: 0.9,
                        initialSpringVelocity: 0.9,

@@ -14,7 +14,7 @@ public class AnimationFromControllerToAlertSheetMultipleSelectController: NSObje
     
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval
     {
-        return AnimationFromControllerToAlertController.animationDuration
+        return AnimationFromControllerToAlertSheetMultipleSelectController.animationDuration
     }
     
     // This method can only  be a nop if the transition is interactive and not a percentDriven interactive transition.
@@ -55,7 +55,7 @@ public class AnimationFromControllerToAlertSheetMultipleSelectController: NSObje
         toVC.view.layoutSubviews()
         
         //animation block
-        UIView.animate(withDuration: TimeInterval(AnimationFromControllerToAlertController.animationDuration),
+        UIView.animate(withDuration: TimeInterval(AnimationFromControllerToAlertSheetMultipleSelectController.animationDuration),
                        delay: 0.0,
                        usingSpringWithDamping: 0.9,
                        initialSpringVelocity: 0.9,
@@ -80,7 +80,7 @@ public class AnimationFromAlertSheetMultipleSelectControllerToController: NSObje
     
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval
     {
-        return AnimationFromAlertControllerToController.animationDuration
+        return AnimationFromAlertSheetMultipleSelectControllerToController.animationDuration
     }
     
     // This method can only  be a nop if the transition is interactive and not a percentDriven interactive transition.
@@ -107,7 +107,7 @@ public class AnimationFromAlertSheetMultipleSelectControllerToController: NSObje
             }
         }
         
-        UIView.animate(withDuration: TimeInterval(AnimationFromControllerToAlertController.animationDuration),
+        UIView.animate(withDuration: TimeInterval(AnimationFromAlertSheetMultipleSelectControllerToController.animationDuration),
                        delay: 0.0,
                        usingSpringWithDamping: 0.9,
                        initialSpringVelocity: 0.9,
