@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class AnimationFromControllerToAlertMultipleSelectController: NSObject, UIViewControllerAnimatedTransitioning {
+public class AnimationFromControllerToAlertSheetController: NSObject, UIViewControllerAnimatedTransitioning {
     
     static let animationDuration = 0.5
     
@@ -22,7 +22,7 @@ public class AnimationFromControllerToAlertMultipleSelectController: NSObject, U
         
         
         let fromVC = transitionContext.viewController(forKey: .from)
-        let toVC = transitionContext.viewController(forKey: .to) as! MMAlertSheetMultipleSelectViewController
+        let toVC = transitionContext.viewController(forKey: .to) as! MMAlertSheetViewController
         let containerView = transitionContext.containerView
         
         //calculate frame for toview controller
@@ -74,7 +74,7 @@ public class AnimationFromControllerToAlertMultipleSelectController: NSObject, U
 
 //MARK: -
 //MARK: - Dismiss Dialog
-public class AnimationFromAlertMultipleSelectControllerToController: NSObject,UIViewControllerAnimatedTransitioning
+public class AnimationFromAlertSheetControllerToController: NSObject,UIViewControllerAnimatedTransitioning
 {
     
     static let animationDuration = 0.5

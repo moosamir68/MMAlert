@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class AnimationFromControllerToAlertController: NSObject, UIViewControllerAnimatedTransitioning {
+public class AnimationFromControllerToAlertSheetMultipleSelectController: NSObject, UIViewControllerAnimatedTransitioning {
     
     static let animationDuration = 0.5
     
@@ -73,7 +73,7 @@ public class AnimationFromControllerToAlertController: NSObject, UIViewControlle
 
 //MARK: -
 //MARK: - Dismiss Dialog
-public class AnimationFromAlertControllerToController: NSObject,UIViewControllerAnimatedTransitioning
+public class AnimationFromAlertSheetMultipleSelectControllerToController: NSObject,UIViewControllerAnimatedTransitioning
 {
     
     static let animationDuration = 0.5
