@@ -87,7 +87,7 @@ public class AnimationFromAlertSheetMultipleSelectControllerToController: NSObje
     public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
         
-        let fromVC = transitionContext.viewController(forKey: .from) as! MMAlertSheetViewController
+        let fromVC = transitionContext.viewController(forKey: .from) as! MMAlertSheetMultipleSelectViewController
         let toVC = transitionContext.viewController(forKey: .to)
         let containerView = transitionContext.containerView
         toVC?.view.alpha = 0.0

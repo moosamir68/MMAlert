@@ -48,7 +48,7 @@ public class AnimationFromControllerToAlertSheetController: NSObject, UIViewCont
         dimView.restorationIdentifier = "dimView"
         dimView.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: toVC,
-                                                action: #selector(MMAlertSheetMultipleSelectViewController.dismissView(_:)))
+                                                action: #selector(MMAlertSheetViewController.dismissView(_:)))
         dimView.addGestureRecognizer(tapGesture)
         containerView.addSubview(dimView)
         
@@ -88,7 +88,7 @@ public class AnimationFromAlertSheetControllerToController: NSObject,UIViewContr
     public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
         
-        let fromVC = transitionContext.viewController(forKey: .from) as! MMAlertSheetMultipleSelectViewController
+        let fromVC = transitionContext.viewController(forKey: .from) as! MMAlertSheetViewController
         let toVC = transitionContext.viewController(forKey: .to)
         let containerView = transitionContext.containerView
         toVC?.view.alpha = 0.0
