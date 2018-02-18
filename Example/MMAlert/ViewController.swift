@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MMAlert
 
 class ViewController: UIViewController {
 
@@ -20,5 +21,30 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBAction func userDidTapOnAlertButton(_ sender: Any) {
+        let alertController = MMAlertSheetViewController()
+        var elements:[MMAlert] = [MMAlert]()
+        let redColor = MMAlert()
+        redColor.color = .red
+        redColor.title = "Red"
+        
+        let blackColor = MMAlert()
+        blackColor.color = .black
+        blackColor.title = "Black"
+        
+        let whiteColor = MMAlert()
+        whiteColor.color = .white
+        whiteColor.title = "White"
+        
+        elements.append(redColor)
+        elements.append(blackColor)
+        elements.append(whiteColor)
+        
+        alertController.elements = elements
+        self.present(alertController, animated: true) {
+            
+        }
+    }
 }
 

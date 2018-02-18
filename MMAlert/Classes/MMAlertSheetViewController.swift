@@ -28,6 +28,14 @@ public class MMAlertSheetViewController: UIViewController, UITableViewDelegate, 
     public var colorCancel:UIColor? = UIColor(displayP3Red:230.0/255.0, green: 97.0/255.0, blue: 84.0/255.0, alpha: 1.000)
     public var colorSeperator:UIColor? = UIColor.black.withAlphaComponent(0.4)
     
+    public init() {
+        super.init(nibName: "MMAlertSheetViewController", bundle: Bundle(for: MMAlertSheetViewController.classForCoder()))
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
 
@@ -78,7 +86,7 @@ public class MMAlertSheetViewController: UIViewController, UITableViewDelegate, 
         self.tableView.separatorColor = colorSeperator
         self.tableView.tableFooterView = UIView(frame: .zero)
         
-        self.tableView.register(UINib(nibName: identifireAlertCell, bundle: nil), forCellReuseIdentifier: identifireAlertCell)
+        self.tableView.register(UINib(nibName: identifireAlertCell, bundle: Bundle(for: MMAlertSheetViewController.classForCoder())), forCellReuseIdentifier: identifireAlertCell)
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MMAlertSheetViewController.dismissView(_:)))
         self.dismissView.addGestureRecognizer(tapGesture)
