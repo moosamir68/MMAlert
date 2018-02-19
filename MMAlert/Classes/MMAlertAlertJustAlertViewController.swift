@@ -41,6 +41,14 @@ public class MMAlertAlertJustAlertViewController: UIViewController {
     
     public var contentAlignment:NSTextAlignment = .center
     
+    public init() {
+        super.init(nibName: "MMAlertAlertJustAlertViewController", bundle: Bundle(for: MMAlertAlertJustAlertViewController.classForCoder()))
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         
