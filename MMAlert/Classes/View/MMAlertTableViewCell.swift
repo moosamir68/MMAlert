@@ -34,6 +34,19 @@ class MMAlertTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setUpUI(font:UIFont?, color:UIColor?){
+        if(font != nil){
+            self.fontTitle = font!
+        }
+        
+        if(color != nil){
+            self.colorTitle = color!
+        }
+        
+        self.titleItem.font = self.fontTitle
+        self.titleItem.textColor = self.colorTitle
+    }
+    
     func fillData(alert:MMAlert?){
         if(alert != nil){
             if(alert?.color != nil){

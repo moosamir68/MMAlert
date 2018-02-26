@@ -28,6 +28,9 @@ public class MMAlertSheetViewController: UIViewController, UITableViewDelegate, 
     public var colorCancel:UIColor? = UIColor(displayP3Red:230.0/255.0, green: 97.0/255.0, blue: 84.0/255.0, alpha: 1.000)
     public var colorSeperator:UIColor? = UIColor.black.withAlphaComponent(0.4)
     
+    public var fontTitleCell:UIFont?
+    public var colorTitleCell:UIColor?
+    
     public init() {
         super.init(nibName: "MMAlertSheetViewController", bundle: Bundle(for: MMAlertSheetViewController.classForCoder()))
     }
@@ -114,6 +117,7 @@ public class MMAlertSheetViewController: UIViewController, UITableViewDelegate, 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:MMAlertTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: identifireAlertCell, for: indexPath) as! MMAlertTableViewCell
         let element = self.elements[indexPath.row]
+        cell.setUpUI(font: self.fontTitleCell, color: self.colorTitleCell)
         cell.fillData(alert: element)
         
         return cell

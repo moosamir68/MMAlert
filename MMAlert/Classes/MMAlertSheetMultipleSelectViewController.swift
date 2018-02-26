@@ -27,6 +27,9 @@ public class MMAlertSheetMultipleSelectViewController: UIViewController, UITable
     public var colorDone:UIColor? = UIColor(displayP3Red:52.0/255.0, green: 74.0/255.0, blue: 99.0/255.0, alpha: 1.000)
     public var colorSeperator:UIColor? = UIColor.black.withAlphaComponent(0.4)
     
+    public var fontTitleCell:UIFont?
+    public var colorTitleCell:UIColor?
+    
     public init() {
         super.init(nibName: "MMAlertSheetMultipleSelectViewController", bundle: Bundle(for: MMAlertSheetMultipleSelectViewController.classForCoder()))
     }
@@ -128,6 +131,7 @@ public class MMAlertSheetMultipleSelectViewController: UIViewController, UITable
             alert.isChecked = true
         }
         
+        cell.setUpUI(font: self.fontTitleCell, color: self.colorTitleCell)
         cell.fillData(alert: alert)
     }
     
