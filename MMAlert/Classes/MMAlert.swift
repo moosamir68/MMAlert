@@ -16,6 +16,7 @@ public class MMAlert: NSObject {
     public var id:Int = 0
     public var idString:String? = ""
     public var color:UIColor?
+    public var object:Any?
     
     override public init() {
         super.init()
